@@ -1,0 +1,288 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 700;
+
+	background-color: #ffffff;
+
+	display: flex;
+  flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h2,
+p,
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+form fieldset {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+	border: none;
+}
+
+li {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	display: none;
+}
+
+.page-header {
+	background-color: #f5f5f5;
+}
+
+.page-header-wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.guest-img {
+	width: 80px;
+	height: 80px;
+	border: 2px solid #79b260;
+}
+
+.page-header-announcement,
+.page-header-announcement-add {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.page-header-announcement-add p {
+	font-size: 20px;
+}
+
+.page-header-announcement p {
+	font-size: 14px;
+}
+
+
+
+.main-page-wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-between;*/
+	flex: 1 0 auto;
+	min-height: calc(65vh - 0px);
+}
+
+.main-page-filters {
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 188px;
+}
+
+.filters-span {
+	height: 38px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	padding-top: 12px;
+	padding-left: 19px;
+}
+
+.filters-span span {
+	vertical-align: middle;
+}
+
+.main-page-legend {
+	padding-top: 10px;
+}
+
+.filter-option {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.filter-input-checkbox + label::after {
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: 0;
+
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+
+	background-image: url(../img/svg/checkbox-off.svg);
+}
+
+.filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url(../img/svg/checkbox-on.svg);
+}
+
+.button-filter {
+    width: 188px;
+    height: 36px;
+    border: 2px solid #e5e5e5;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.book {
+	width: 267px;
+	height: 350px;
+	margin-left: 8px; 
+}
+
+.main-page {
+	margin-top: 20px;
+}
+
+.main-page-books {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.main-login {
+	min-height: calc(60vh - 0px);
+}
+
+.login-window {
+	text-align: center;
+	margin-top: 120px;
+}
+
+.page-footer-wrapper-top {
+	background-color: #e5e5e5;
+}
+
+.page-footer-wrapper-bottom {
+	background-color: #b1b1b1;
+}
+
+.page-footer-top,
+.page-footer-bottom {
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+
+.footer-info,
+.social {
+ width: 330px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ text-align: center;
+}
+
+
+.footer-social {
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 25px;
+}
+
+.social-botton {
+	margin-left: 1px;
+}
+
+.page-footer {
+	flex-shrink: 0;
+}
+
+.book-photo	{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 133px;
+	height: 205px;
+	border: 5px solid white;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 1px gray;
+}
+
+.book-photo-main {
+	margin: 30px  40px 90px 0;
+	width: 240px;
+	height: 320px;
+}
+
+.book-info {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.book-photo:hover {
+	box-shadow: 0 0 30px 1px gray;
+}
+
+.main-addbook {
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.addbook-info,
+.addbook-form {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.addbook-wrapper {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.addbook-form input{
+	margin-bottom: 19px;
+	width: 250px;
+}
+
+.addbook-info label{
+	margin-bottom: 15px;
+	margin-left: 100px;
+	text-align: left;
+}
+
+.photo-img{
+	border: 5px solid white;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 1px gray;
+}

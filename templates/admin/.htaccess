@@ -1,0 +1,9 @@
+<Files adminMain.php>
+AuthType Basic
+
+AuthName "Если ты админ, то знаешь что делать"
+
+AuthUserFile /SellBooks/Controllers/.htpasswd
+
+Require valid-user
+</Files>
